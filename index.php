@@ -25,7 +25,7 @@
 	
 	
 	include_once _lib."functions_giohang.php";
-	$config_url='localhost:81/nhadep';
+	$config_url='localhost:81/nhadepnew';
     if($_REQUEST['command']=='add' && $_REQUEST['productid']>0){
     	$pid=$_REQUEST['productid'];	
     	$_SESSION['size'.$pid]=$_REQUEST['spsize']; 
@@ -36,6 +36,15 @@
 	}
 ?>
 <!DOCTYPE html>
+<?php
+if($template=="index")
+{
+    include _template."layout/layout_index.php";
+}
+else 
+{
+?>
+
 <html prefix="og: http://ogp.me/ns#" class=" yes-js js_active js" lang="vi">
 <head>
 <base href="http://<?=$config_url?>/"	/>
@@ -275,3 +284,4 @@ src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/944239827/?value
 <div style="display:none"><a href="http://nhadep.com.vn/wp-content/cache/index.html" target="_blank">Replica Rolex Montres</a></div>
 </body>
 </html>
+<?php }?>
