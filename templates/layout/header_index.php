@@ -63,7 +63,7 @@
                                         <li><a href="index.html"><span class="icon-menu i-home"></span><br />Trang chủ</a></li>
                                         
                                 <?php include _template."layout/menu_top_list_index.php"; ?>
-                                        <li><a href="#"><span class="icon-menu i-khuyenmai"></span><br />Khuyến mãi</a></li>
+                                      
                                         <li><a href="#"><span class="icon-menu i-contact"></span><br />Liên hệ</a></li>
                                     </ul>
                                 </div><!--/.nav-collapse -->
