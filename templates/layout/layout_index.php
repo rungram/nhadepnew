@@ -139,10 +139,18 @@
                             <div class="tab-container">
                                 <div id="tab-2" class="tab-panel">
                                     <ul class="product-list owl-carousel" data-dots="false" data-loop="true" data-nav="true" data-margin="30" data-autoplaytimeout="1000" data-autoplayhoverpause="true" data-responsive='{"0":{"items":2},"600":{"items":3},"1000":{"items":5}}'>
+                                        <?php
+                                        $d->reset();
+                                        $sql_sanphammoi="select * from #_product where hienthi = 1 order by id desc ";
+                                        $d->query($sql_sanphammoi);
+                                        $result_spnam=$d->result_array();
+                                        for ($i=0;$i<count($result_spnam);$i++)
+                                        {
+                                        ?>
                                         <li>
                                             <div class="left-block">
-                                                <a href="http://maison-decor.vn/do-trang-tri/den/den-san-kuta-4CGA2.html" title="Đèn sàn Lustre">
-                                                    <img class="img-responsive" alt="Đèn sàn Lustre" src="http://maison-decor.vn/upload/products/thumb/den-san-kuta-4CGA2.jpg" />
+                                                <a href="chi-tiet-san-pham/<?=$result_spnam[$i]['tenkhongdau']?>-<?=$result_spnam[$i]['id']?>.html" title="Đèn sàn Lustre">
+                                                    <img class="img-responsive" alt="Đèn sàn Lustre" src="upload/sanpham/<?php if($result_spnam[$i]["tc_big"]==1) echo $result_spnam[$i]["photo"]; else echo $result_spnam[$i]["photo"] ?>" />
                                                 </a>
 
                                                 <div class="quick-view">
@@ -157,711 +165,102 @@
                                                 </div>
                                             </div>
                                             <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/do-trang-tri/den/den-san-kuta-4CGA2.html" title="Đèn sàn Lustre">Đèn sàn Lustre</a></h5>
+                                                <h5 class="product-name"><a href="chi-tiet-san-pham/<?=$result_spnam[$i]['tenkhongdau']?>-<?=$result_spnam[$i]['id']?>.html" title="<?=$result_spnam[$i]["ten_vi"]?>"><?=$result_spnam[$i]["ten_vi"]?></a></h5>
                                                 <div class="content_price">
-                                                    <span class="price product-price">3.500.000 đ</span>
+                                                    <span class="price product-price"><?php echo number_format ($result_spnam[$i]['gia'],0,",",".")." ₫";?></span>
 
 
                                                 </div>
 
                                             </div>
                                         </li>
-                                        <li>
-                                            <div class="left-block">
-                                                <a href="http://maison-decor.vn/do-trang-tri/den/den-san-trio-chrome-793LP.html" title="Đèn sàn Trio Chrome">
-                                                    <img class="img-responsive" alt="Đèn sàn Trio Chrome" src="http://maison-decor.vn/upload/products/thumb/den-san-trio-chrome-793LP.jpg" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="182"></a>
-                                                </div>
-
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(182)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                                <div class="group-price">
-                                                    <span class="product-new">Mới</span>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/do-trang-tri/den/den-san-trio-chrome-793LP.html" title="Đèn sàn Trio Chrome">Đèn sàn Trio Chrome</a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">3.400.000 đ</span>
-
-
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="left-block">
-                                                <a href="http://maison-decor.vn/san-pham//.html" title="">
-                                                    <img class="img-responsive" alt="" src="http://maison-decor.vn/upload/products/thumb/" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="184"></a>
-                                                </div>
-
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(184)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                                <div class="group-price">
-                                                    <span class="product-new">Mới</span>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/san-pham//.html" title=""></a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">Giá&#58;&nbsp;Liên hệ</span>
-
-
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="left-block">
-                                                <a href="http://maison-decor.vn/san-pham//.html" title="">
-                                                    <img class="img-responsive" alt="" src="http://maison-decor.vn/upload/products/thumb/" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="185"></a>
-                                                </div>
-
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(185)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                                <div class="group-price">
-                                                    <span class="product-new">Mới</span>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/san-pham//.html" title=""></a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">Giá&#58;&nbsp;Liên hệ</span>
-
-
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="left-block">
-                                                <a href="http://maison-decor.vn/san-pham//.html" title="">
-                                                    <img class="img-responsive" alt="" src="http://maison-decor.vn/upload/products/thumb/" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="186"></a>
-                                                </div>
-
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(186)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                                <div class="group-price">
-                                                    <span class="product-new">Mới</span>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/san-pham//.html" title=""></a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">Giá&#58;&nbsp;Liên hệ</span>
-
-
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="left-block">
-                                                <a href="http://maison-decor.vn/phong-khach/tu-va-ke/ke-tv-silo-QGMY5.html" title="Kệ TV Silo">
-                                                    <img class="img-responsive" alt="Kệ TV Silo" src="http://maison-decor.vn/upload/products/thumb/ke-tv-silo-QGMY5.jpg" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="187"></a>
-                                                </div>
-
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(187)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                                <div class="group-price">
-                                                    <span class="product-new">Mới</span>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/phong-khach/tu-va-ke/ke-tv-silo-QGMY5.html" title="Kệ TV Silo">Kệ TV Silo</a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">4.500.000 đ</span>
-
-
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="left-block">
-                                                <a href="http://maison-decor.vn/phong-khach/tu-va-ke/ke-silo-sideboard-TLM8Q.html" title="Kệ Silo Sideboard">
-                                                    <img class="img-responsive" alt="Kệ Silo Sideboard" src="http://maison-decor.vn/upload/products/thumb/ke-silo-sideboard-TLM8Q.jpg" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="189"></a>
-                                                </div>
-
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(189)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                                <div class="group-price">
-                                                    <span class="product-new">Mới</span>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/phong-khach/tu-va-ke/ke-silo-sideboard-TLM8Q.html" title="Kệ Silo Sideboard">Kệ Silo Sideboard</a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">4.900.000 đ</span>
-
-
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="left-block">
-                                                <a href="http://maison-decor.vn/san-pham//.html" title="">
-                                                    <img class="img-responsive" alt="" src="http://maison-decor.vn/upload/products/thumb/" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="190"></a>
-                                                </div>
-
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(190)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                                <div class="group-price">
-                                                    <span class="product-new">Mới</span>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/san-pham//.html" title=""></a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">Giá&#58;&nbsp;Liên hệ</span>
-
-
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="left-block">
-                                                <a href="http://maison-decor.vn/phong-ngu/tu-dau-giuong/tu-dau-giuong-mr-marius-origami-KS5GP.html" title="Tủ  Mr Marius Origami">
-                                                    <img class="img-responsive" alt="Tủ  Mr Marius Origami" src="http://maison-decor.vn/upload/products/thumb/tu-dau-giuong-mr-marius-origami-KS5GP.jpg" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="191"></a>
-                                                </div>
-
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(191)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                                <div class="group-price">
-                                                    <span class="product-new">Mới</span>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/phong-ngu/tu-dau-giuong/tu-dau-giuong-mr-marius-origami-KS5GP.html" title="Tủ  Mr Marius Origami">Tủ  Mr Marius Origami</a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">2.500.000 đ</span>
-
-
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="left-block">
-                                                <a href="http://maison-decor.vn/phong-khach/armchair/alexa-armchair-0F8BM.html" title="Alexa Armchair">
-                                                    <img class="img-responsive" alt="Alexa Armchair" src="http://maison-decor.vn/upload/products/thumb/alexa-armchair-0F8BM.jpg" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="192"></a>
-                                                </div>
-
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(192)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                                <div class="group-price">
-                                                    <span class="product-new">Mới</span>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/phong-khach/armchair/alexa-armchair-0F8BM.html" title="Alexa Armchair">Alexa Armchair</a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">4.900.000 đ</span>
-
-
-                                                </div>
-
-                                            </div>
-                                        </li>
+                            			<?php
+                            			} 
+                            			?>
                                     </ul>
                                 </div>
                                 <div id="tab-3" class="tab-panel">
                                     <ul class="product-list owl-carousel" data-dots="false" data-loop="true" data-nav="true" data-margin="30" data-autoplaytimeout="1000" data-autoplayhoverpause="true" data-responsive='{"0":{"items":2},"600":{"items":3},"1000":{"items":5}}'>
+                                        <?php
+                                        $d->reset();
+                                        $sql_sanphammoi="select * from #_product order by luotxem desc ";
+                                        $d->query($sql_sanphammoi);
+                                        $result_spnam=$d->result_array();
+                                        for ($i=0;$i<count($result_spnam);$i++)
+                                        {
+                                        ?>
                                         <li>
-                                            <div class="left-block ">
-                                                <a href="http://maison-decor.vn/phong-khach/stool/stool-3-KLFMI.html" title="Stool 3">
-                                                    <img class="img-responsive" alt="Stool 3" src="http://maison-decor.vn/upload/products/thumb/stool-3-KLFMI.png" />
+                                            <div class="left-block">
+                                                <a href="chi-tiet-san-pham/<?=$result_spnam[$i]['tenkhongdau']?>-<?=$result_spnam[$i]['id']?>.html" title="Đèn sàn Lustre">
+                                                    <img class="img-responsive" alt="Đèn sàn Lustre" src="upload/sanpham/<?php if($result_spnam[$i]["tc_big"]==1) echo $result_spnam[$i]["photo"]; else echo $result_spnam[$i]["photo"] ?>" />
                                                 </a>
+
                                                 <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="48"></a>
+                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="181"></a>
                                                 </div>
+
                                                 <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(48)" href="javascript:void(0)">Đặt mua</a>
+                                                    <a title="Đặt mua" onclick="Add_Cart(181)" href="javascript:void(0)">Đặt mua</a>
+                                                </div>
+                                                <div class="group-price">
+                                                    <span class="product-new">Mới</span>
                                                 </div>
                                             </div>
                                             <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/phong-khach/stool/stool-3-KLFMI.html" title="Stool 3">Stool 3</a></h5>
+                                                <h5 class="product-name"><a href="chi-tiet-san-pham/<?=$result_spnam[$i]['tenkhongdau']?>-<?=$result_spnam[$i]['id']?>.html" title="<?=$result_spnam[$i]["ten_vi"]?>"><?=$result_spnam[$i]["ten_vi"]?></a></h5>
                                                 <div class="content_price">
-                                                    <span class="price product-price">990.000 đ</span>
+                                                    <span class="price product-price"><?php echo number_format ($result_spnam[$i]['gia'],0,",",".")." ₫";?></span>
 
 
                                                 </div>
 
                                             </div>
                                         </li>
-                                        <li>
-                                            <div class="left-block ">
-                                                <a href="http://maison-decor.vn/phong-khach/stool/geometric-chair.html" title="Geometric Chair">
-                                                    <img class="img-responsive" alt="Geometric Chair" src="http://maison-decor.vn/upload/products/thumb/stool-4-D5O6V.png" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="49"></a>
-                                                </div>
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(49)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/phong-khach/stool/geometric-chair.html" title="Geometric Chair">Geometric Chair</a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">1.300.000 đ</span>
-
-
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="left-block ">
-                                                <a href="http://maison-decor.vn/phong-khach/stool/mid-century-upholstered-stool-8O3S8.html" title="Mid-Century Upholstered Stool">
-                                                    <img class="img-responsive" alt="Mid-Century Upholstered Stool" src="http://maison-decor.vn/upload/products/thumb/stool-5-88YZO.png" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="50"></a>
-                                                </div>
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(50)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/phong-khach/stool/mid-century-upholstered-stool-8O3S8.html" title="Mid-Century Upholstered Stool">Mid-Century Upholstered Stool</a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">1.400.000 đ</span>
-
-
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="left-block ">
-                                                <a href="http://maison-decor.vn/san-pham//.html" title="">
-                                                    <img class="img-responsive" alt="" src="http://maison-decor.vn/upload/products/thumb/" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="51"></a>
-                                                </div>
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(51)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/san-pham//.html" title=""></a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">Giá&#58;&nbsp;Liên hệ</span>
-
-
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="left-block ">
-                                                <a href="http://maison-decor.vn/phong-khach/stool/stool-7-9094B.html" title="Stool 7">
-                                                    <img class="img-responsive" alt="Stool 7" src="http://maison-decor.vn/upload/products/thumb/stool-7-9094B.png" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="52"></a>
-                                                </div>
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(52)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/phong-khach/stool/stool-7-9094B.html" title="Stool 7">Stool 7</a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">1.300.000 đ</span>
-
-
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="left-block ">
-                                                <a href="http://maison-decor.vn/san-pham//.html" title="">
-                                                    <img class="img-responsive" alt="" src="http://maison-decor.vn/upload/products/thumb/" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="53"></a>
-                                                </div>
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(53)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/san-pham//.html" title=""></a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">Giá&#58;&nbsp;Liên hệ</span>
-
-
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="left-block ">
-                                                <a href="http://maison-decor.vn/phong-khach/ban-sofa/ban-sofa-1-CICFV.html" title="Bàn Sofa 1">
-                                                    <img class="img-responsive" alt="Bàn Sofa 1" src="http://maison-decor.vn/upload/products/thumb/ban-sofa-1-CICFV.png" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="28"></a>
-                                                </div>
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(28)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/phong-khach/ban-sofa/ban-sofa-1-CICFV.html" title="Bàn Sofa 1">Bàn Sofa 1</a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">2.900.000 đ</span>
-
-
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="left-block ">
-                                                <a href="http://maison-decor.vn/phong-khach/ban-sofa/ban-sofa-2-FA0NH.html" title="Bàn Sofa 2">
-                                                    <img class="img-responsive" alt="Bàn Sofa 2" src="http://maison-decor.vn/upload/products/thumb/ban-sofa-2-FA0NH.png" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="29"></a>
-                                                </div>
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(29)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/phong-khach/ban-sofa/ban-sofa-2-FA0NH.html" title="Bàn Sofa 2">Bàn Sofa 2</a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">2.900.000 đ</span>
-
-
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="left-block ">
-                                                <a href="http://maison-decor.vn/phong-khach/ban-sofa/ban-sofa-3-KL6AL.html" title="Bàn Sofa 3">
-                                                    <img class="img-responsive" alt="Bàn Sofa 3" src="http://maison-decor.vn/upload/products/thumb/ban-sofa-3-KL6AL.png" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="30"></a>
-                                                </div>
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(30)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/phong-khach/ban-sofa/ban-sofa-3-KL6AL.html" title="Bàn Sofa 3">Bàn Sofa 3</a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">2.900.000 đ</span>
-
-
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="left-block ">
-                                                <a href="http://maison-decor.vn/phong-khach/ban-sofa/ban-sofa-4-VUOH5.html" title="Bàn Sofa 4">
-                                                    <img class="img-responsive" alt="Bàn Sofa 4" src="http://maison-decor.vn/upload/products/thumb/ban-sofa-4-VUOH5.png" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="31"></a>
-                                                </div>
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(31)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/phong-khach/ban-sofa/ban-sofa-4-VUOH5.html" title="Bàn Sofa 4">Bàn Sofa 4</a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">1.900.000 đ</span>
-
-
-                                                </div>
-
-                                            </div>
-                                        </li>
+                            			<?php
+                            			} 
+                            			?>
                                     </ul>
                                 </div>
                                 <div id="tab-4" class="tab-panel active">
                                     <ul class="product-list owl-carousel" data-dots="false" data-loop="true" data-nav="true" data-margin="30" data-autoplaytimeout="1000" data-autoplayhoverpause="true" data-responsive='{"0":{"items":2},"600":{"items":3},"1000":{"items":5}}'>
+                                        <?php
+                                        $d->reset();
+                                        $sql_sanphammoi="select * from #_product where giagiam !=0 order by id desc ";
+                                        $d->query($sql_sanphammoi);
+                                        $result_spnam=$d->result_array();
+                                        for ($i=0;$i<count($result_spnam);$i++)
+                                        {
+                                        ?>
                                         <li>
-                                            <div class="left-block ">
-                                                <a href="http://maison-decor.vn/phong-khach/ban-sofa/marcella-painted-side-table-8YQO0.html" title="Marcella Painted Side Table">
-                                                    <img class="img-responsive" alt="Marcella Painted Side Table" src="http://maison-decor.vn/upload/products/thumb/marcella-painted-side-table-8YQO0.jpg" />
+                                            <div class="left-block">
+                                                <a href="chi-tiet-san-pham/<?=$result_spnam[$i]['tenkhongdau']?>-<?=$result_spnam[$i]['id']?>.html" title="Đèn sàn Lustre">
+                                                    <img class="img-responsive" alt="Đèn sàn Lustre" src="upload/sanpham/<?php if($result_spnam[$i]["tc_big"]==1) echo $result_spnam[$i]["photo"]; else echo $result_spnam[$i]["photo"] ?>" />
                                                 </a>
+
                                                 <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="289"></a>
+                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="181"></a>
                                                 </div>
 
                                                 <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(289)" href="javascript:void(0)">Đặt mua</a>
+                                                    <a title="Đặt mua" onclick="Add_Cart(181)" href="javascript:void(0)">Đặt mua</a>
                                                 </div>
                                                 <div class="group-price">
-                                                    <span class="product-sale">Sale</span>
+                                                    <span class="product-new">Mới</span>
                                                 </div>
                                             </div>
                                             <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/phong-khach/ban-sofa/marcella-painted-side-table-8YQO0.html" title="Marcella Painted Side Table">Marcella Painted Side Table</a></h5>
+                                                <h5 class="product-name"><a href="chi-tiet-san-pham/<?=$result_spnam[$i]['tenkhongdau']?>-<?=$result_spnam[$i]['id']?>.html" title="<?=$result_spnam[$i]["ten_vi"]?>"><?=$result_spnam[$i]["ten_vi"]?></a></h5>
                                                 <div class="content_price">
-                                                    <span class="price product-price">1.540.000 đ</span>
-                                                    <span class="price old-price">2.200.000 đ</span>
-                                                    <span class="price sale-off">-30%</span>
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="left-block ">
-                                                <a href="http://maison-decor.vn/phong-an/ghe-an/lana-chair-ZIL9O.html" title="Lana Chair">
-                                                    <img class="img-responsive" alt="Lana Chair" src="http://maison-decor.vn/upload/products/thumb/lana-chair-ZIL9O.jpg" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="288"></a>
-                                                </div>
-
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(288)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                                <div class="group-price">
-                                                    <span class="product-sale">Sale</span>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/phong-an/ghe-an/lana-chair-ZIL9O.html" title="Lana Chair">Lana Chair</a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">2.450.000 đ</span>
-                                                    <span class="price old-price">3.500.000 đ</span>
-                                                    <span class="price sale-off">-30%</span>
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="left-block ">
-                                                <a href="http://maison-decor.vn/phong-an/ban-an/ban-go-soi-den-cao-cap-ECSFI.html" title="Bàn gỗ sồi đen Kolding">
-                                                    <img class="img-responsive" alt="Bàn gỗ sồi đen Kolding" src="http://maison-decor.vn/upload/products/thumb/ban-go-soi-den-cao-cap-ECSFI.jpg" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="140"></a>
-                                                </div>
-
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(140)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                                <div class="group-price">
-                                                    <span class="product-sale">Sale</span>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/phong-an/ban-an/ban-go-soi-den-cao-cap-ECSFI.html" title="Bàn gỗ sồi đen Kolding">Bàn gỗ sồi đen Kolding</a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">11.420.000 đ</span>
-                                                    <span class="price old-price">14.900.000 đ</span>
-                                                    <span class="price sale-off">-23%</span>
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="left-block ">
-                                                <a href="http://maison-decor.vn/phong-khach/sofa/golden-l-sofa-NSSTT.html" title="Golden L Sofa">
-                                                    <img class="img-responsive" alt="Golden L Sofa" src="http://maison-decor.vn/upload/products/thumb/golden-l-sofa-NSSTT.jpg" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="285"></a>
-                                                </div>
-
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(285)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                                <div class="group-price">
-                                                    <span class="product-sale">Sale</span>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/phong-khach/sofa/golden-l-sofa-NSSTT.html" title="Golden L Sofa">Golden L Sofa</a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">15.200.000 đ</span>
-                                                    <span class="price old-price">19.000.000 đ</span>
-                                                    <span class="price sale-off">-20%</span>
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="left-block ">
-                                                <a href="http://maison-decor.vn/phong-khach/sofa/otto-sofa-blue-DA5BA.html" title="Otto Sofa Blue">
-                                                    <img class="img-responsive" alt="Otto Sofa Blue" src="http://maison-decor.vn/upload/products/thumb/otto-sofa-blue-DA5BA.jpg" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="286"></a>
-                                                </div>
-
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(286)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                                <div class="group-price">
-                                                    <span class="product-sale">Sale</span>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/phong-khach/sofa/otto-sofa-blue-DA5BA.html" title="Otto Sofa Blue">Otto Sofa Blue</a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">12.900.000 đ</span>
+                                                    <span class="price product-price"><?php echo number_format ($result_spnam[$i]['gia'],0,",",".")." ₫";?></span>
 
 
                                                 </div>
 
                                             </div>
                                         </li>
-                                        <li>
-                                            <div class="left-block ">
-                                                <a href="http://maison-decor.vn/phong-khach/armchair/wendy-armchair-SHZ6P.html" title="Wendy Armchair">
-                                                    <img class="img-responsive" alt="Wendy Armchair" src="http://maison-decor.vn/upload/products/thumb/wendy-armchair-SHZ6P.jpg" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="287"></a>
-                                                </div>
-
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(287)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                                <div class="group-price">
-                                                    <span class="product-sale">Sale</span>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/phong-khach/armchair/wendy-armchair-SHZ6P.html" title="Wendy Armchair">Wendy Armchair</a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">4.130.000 đ</span>
-                                                    <span class="price old-price">5.900.000 đ</span>
-                                                    <span class="price sale-off">-30%</span>
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="left-block ">
-                                                <a href="http://maison-decor.vn/san-pham//.html" title="">
-                                                    <img class="img-responsive" alt="" src="http://maison-decor.vn/upload/products/thumb/" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="269"></a>
-                                                </div>
-
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(269)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                                <div class="group-price">
-                                                    <span class="product-sale">Sale</span>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/san-pham//.html" title=""></a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">Giá&#58;&nbsp;Liên hệ</span>
-
-
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="left-block ">
-                                                <a href="http://maison-decor.vn/phong-khach/ban-sofa/glassware-coffee-table-9UZ3U.html" title="Glassware Coffee Table">
-                                                    <img class="img-responsive" alt="Glassware Coffee Table" src="http://maison-decor.vn/upload/products/thumb/glassware-coffee-table-9UZ3U.jpg" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="270"></a>
-                                                </div>
-
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(270)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                                <div class="group-price">
-                                                    <span class="product-sale">Sale</span>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/phong-khach/ban-sofa/glassware-coffee-table-9UZ3U.html" title="Glassware Coffee Table">Glassware Coffee Table</a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">1.520.000 đ</span>
-                                                    <span class="price old-price">1.900.000 đ</span>
-                                                    <span class="price sale-off">-20%</span>
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="left-block ">
-                                                <a href="http://maison-decor.vn/phong-khach/armchair/armchair-4-MC0ZM.html" title="Flowers Armchair ">
-                                                    <img class="img-responsive" alt="Flowers Armchair " src="http://maison-decor.vn/upload/products/thumb/armchair-4-MC0ZM.jpg" />
-                                                </a>
-                                                <div class="quick-view">
-                                                    <a title="Xem nhanh" class="search" href="javascript:void(0);" data-id="38"></a>
-                                                </div>
-
-                                                <div class="add-to-cart">
-                                                    <a title="Đặt mua" onclick="Add_Cart(38)" href="javascript:void(0)">Đặt mua</a>
-                                                </div>
-                                                <div class="group-price">
-                                                    <span class="product-sale">Sale</span>
-                                                </div>
-                                            </div>
-                                            <div class="right-block">
-                                                <h5 class="product-name"><a href="http://maison-decor.vn/phong-khach/armchair/armchair-4-MC0ZM.html" title="Flowers Armchair ">Flowers Armchair </a></h5>
-                                                <div class="content_price">
-                                                    <span class="price product-price">2.940.000 đ</span>
-                                                    <span class="price old-price">4.900.000 đ</span>
-                                                    <span class="price sale-off">-40%</span>
-                                                </div>
-
-                                            </div>
-                                        </li>
+                            			<?php
+                            			} 
+                            			?>
                                     </ul>
                                 </div>
                             </div>
