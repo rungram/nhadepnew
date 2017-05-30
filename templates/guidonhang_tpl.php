@@ -43,8 +43,6 @@
 	values('$tennguoidat','$dienthoai','$diachi','$noidung','$tenmathang','$giamathang','$soluong','$ngaydathang','$tonggia','$hinhmathang','$user','$tenkhongdau','$masp','$size','$mau','$email','$tinh_tp','$ngaytim')";
    	  		 $send_giohang=$d->query($sql_sendgiohang);	
 			
-			
-			
    	   //add vo database
 	   
 		 //add vo mail	
@@ -164,7 +162,7 @@ $mail->SMTPSecure = 'ssl'; // sử dụng giao thức SSL vì gmail bắt buộc
 $mail->Host = 'smtp.gmail.com';
 $mail->Port = 465; 
 $mail->Username = "nguyenleduykhang29111994@gmail.com";  
-$mail->Password = "Kcdagtemyatpxh1";           
+$mail->Password = "Kcdagtemyatpxh9";           
 $mail->SetFrom($from, $from_name);
 $mail->From = $from;		
 

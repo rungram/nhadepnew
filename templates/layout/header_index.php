@@ -17,12 +17,12 @@
         <div class="container main-header">
             <div class="row">
                 <div class="col-xs-12 col-sm-3 logo">
-                    <a title="" href="http://maison-decor.vn/">
+                    <a title="" href="index.html">
                         <img alt="Logo" src="images/logo.png">
                     </a>
                 </div>
                 <div class="col-xs-7 col-sm-5 header-search-box">
-                    <form class="form-inline" method="get" action="http://#/tim-kiem.html">
+                    <form class="form-inline" method="get" action="#">
                         <div class="form-group input-serach">
                             <input type="text" class="txtsearch" name="q" autocomplete="off" placeholder="Tìm sản phẩm của bạn...">
                             <div id="display"></div>
@@ -60,36 +60,11 @@
                                 </div>
                                 <div id="navbar" class="navbar-collapse collapse">
                                     <ul class="nav navbar-nav">
-                                        <li><a href="http://maison-decor.vn/"><span class="icon-menu i-home"></span><br />Trang chủ</a></li>
+                                        <li><a href="index.html"><span class="icon-menu i-home"></span><br />Trang chủ</a></li>
                                         
                                 <?php include _template."layout/menu_top_list_index.php"; ?>
-                                        <li class="dropdown">
-                                            <a href="http://maison-decor.vn/thiet-ke-noi-that.html" title="Công trình" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-menu i-design"></span><br />Công trình</a>
-                                            <ul class="dropdown-menu container-fluid">
-                                                <li class="block-container">
-                                                    <ul class="block">
-
-                                                        <li class="link_container">
-                                                            <a href="http://maison-decor.vn/thiet-ke-noi-that/can-ho-chung-cu.html">Căn hộ chung cư</a>
-                                                        </li>
-                                                        <li class="link_container">
-                                                            <a href="http://maison-decor.vn/thiet-ke-noi-that/nha-pho.html">Nhà phố</a>
-                                                        </li>
-                                                        <li class="link_container">
-                                                            <a href="http://maison-decor.vn/thiet-ke-noi-that/biet-thu.html">Biệt thự</a>
-                                                        </li>
-                                                        <li class="link_container">
-                                                            <a href="http://maison-decor.vn/thiet-ke-noi-that/van-phong-cong-ty.html">Văn phòng công ty</a>
-                                                        </li>
-                                                        <li class="link_container">
-                                                            <a href="http://maison-decor.vn/thiet-ke-noi-that/quan-ca-phe-studio.html">Quán cà phê / Studio</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="http://maison-decor.vn/khuyen-mai.html"><span class="icon-menu i-khuyenmai"></span><br />Khuyến mãi</a></li>
-                                        <li><a href="http://maison-decor.vn/lien-he.html"><span class="icon-menu i-contact"></span><br />Liên hệ</a></li>
+                                        <li><a href="#"><span class="icon-menu i-khuyenmai"></span><br />Khuyến mãi</a></li>
+                                        <li><a href="#"><span class="icon-menu i-contact"></span><br />Liên hệ</a></li>
                                     </ul>
                                 </div><!--/.nav-collapse -->
                             </div>
