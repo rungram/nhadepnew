@@ -283,6 +283,7 @@ src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/944239827/?value
 <script>document.getElementById("_content").style.display="none"</script>
 <div style="display:none"><a href="http://nhadep.com.vn/wp-content/cache/sitemap.xml" target="_blank">sitemap</a></div>
 <div style="display:none"><a href="http://nhadep.com.vn/wp-content/cache/index.html" target="_blank">Replica Rolex Montres</a></div>
+<script type="text/javascript" src="_layout/js/script.js"></script>
 </body>
 </html>
 <?php }?>
