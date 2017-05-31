@@ -9,197 +9,143 @@
 			// cac tin tuc
 			$sql_timkiem = "select * from #_product where (ten_vi LIKE '%$tukhoa%') and hienthi=1 order by stt asc";			
 			$d->query($sql_timkiem);
-			$result_timkiem = $d->result_array();	
+			$result_spnam = $d->result_array();	
 			
 			$curPage = isset($_GET['p']) ? $_GET['p'] : 1;
 			$url=getCurrentPageURL();
 			$maxR=30;
 			$maxP=5;
-			$paging=paging_home($result_timkiem, $url, $curPage, $maxR, $maxP);
-			$result_timkiem=$paging['source'];
+			$paging=paging_home($result_spnam, $url, $curPage, $maxR, $maxP);
+			$result_spnam=$paging['source'];
 			
-			$total_sp = count($result_timkiem);
+			$total_sp = count($result_spnam);
 		}	
-		
 ?>
-<section id="content">
 
-		  
-			  <!-- end divider -->
-  <div class="row">
-			    
-		<div class="col-lg-12">
-             <div class=" container content">
-			     <div class="col-lg-9">
-                        <div class="product">
-			              <div class="col-md-12 col-sm-12 ">
-			                <h2>Sản phẩm</h2>
-			                <div class="block-blog1">
-			                <?php for($i=0,$count_spnam=count($result_timkiem);$i<$count_spnam;$i++) { ?>
-			                
-                              <div class=" col-md-4 col-sm-4 col-xsm-6 col-xs-12  padding10">
-			                    <div class="item-service"><a href="chi-tiet-san-pham/<?=$result_timkiem[$i]['tenkhongdau']?>-<?=$result_timkiem[$i]['id']?>.html" class="view-img"></a>
-			                    <a href="chi-tiet-san-pham/<?=$result_timkiem[$i]['tenkhongdau']?>-<?=$result_timkiem[$i]['id']?>.html" class="view-img"><img src="upload/sanpham/<?php if($result_timkiem[$i]["tc_big"]==1) echo $result_timkiem[$i]["photo"]; else echo $result_timkiem[$i]["photo"] ?>" alt=""></a><a href="chi-tiet-san-pham/<?=$result_timkiem[$i]['tenkhongdau']?>-<?=$result_timkiem[$i]['id']?>.html">
-		                        <h2><?=$result_timkiem[$i]["ten_vi"]?></h2>
-			                      </a> </div>
-		                      </div>
-			                <?php }?>
-		                    </div>
-			                <div class="phantrang">
-                            <div class="pagination-container">
-                            <ul class="pagination">
-                            <?=$paging['paging']?>
-                            </ul>
-                            </div>
-		                  </div>
-		                </div>
-                     </div>   
-                    		
-            </div>
-            <div class="col-lg-3">
-                 <div class="box">
-                        	<h1>Video</h1>
-                         	<div class=" boxed">
-                            	<a href="#" class="video"> <img src="img/images.png" alt=" "></a>
-                                <a href="#" class="video"> <img src="img/images.png" alt=" "></a>
-                            </div>
-                  </div>
-                  <div class="box">
-                        	<h1>Thư viện</h1>
-                         	<div class=" boxed">
-                            	<div class="content-img">
-                                  <div class="padding5 item-img-left col-md-6"> <a href="#"><img src="img/95017730881.jpg"></a> </div>
-                                  <div class="padding5 item-img-left col-md-6"> <a href="#"><img src="img/95017730880.jpg"></a> </div>
-                                  <div class="padding5 item-img-left col-md-6"> <a href="#"><img src="img/1633088327.png"></a> </div>
-                                  <div class="padding5 item-img-left col-md-6"> <a href="#"><img src="img/80572517181.png"></a> </div>
-                                  <div class="padding5 item-img-left col-md-6"> <a href="#"><img src="img/1561031705.jpg"></a> </div>
-                                  <div class="padding5 item-img-left col-md-6"> <a href="#"><img src="img/90377741090.jpg"></a> </div>
-                                  <div class="padding5 item-img-left col-md-6"> <a href="#"><img src="img/69198311360.jpg"></a> </div>
-                                  <div class="padding5 item-img-left col-md-6"> <a href="#"><img src="img/4834146575.jpg"></a> </div>
-                                  <div class="padding5 item-img-left col-md-6"> <a href="#"><img src="img/38458851070.jpg"></a> </div>
-                                  <div class="padding5 item-img-left col-md-6"><a href="#"><img src="img/38458851071.jpg"></a></div>
-                                </div>
-                            
-                            </div>
-                  </div>
-        
-            </div>
-           </div>
-    </div>
- 
-    		<div class="  clear"></div>
-            <div class=" container support">
-                        	<div class=" col-md-4 col-sm-4 col-xsm-6 col-xs-12 text-center">
-                            	 <div class="progress">
-                                      <div class="block">
-                                      	<h1>Hotline</h1>
-                                        <h3 class="title_1">Bộ phận kinh doanh</h3>
-                                        <span class=" fa-3x">(+84.8) 903610327</span>
-                                        <h3 class="title_1">Bộ phận hỗ trợ kỹ thuật</h3>
-                                        <span class="fa-3x">(+84.8) 903610327</span>
-                                        
-                                      </div>
-                              </div>
-                                
-                            </div>
-                            <div class=" col-md-4 col-sm-4 col-xsm-6 col-xs-12">
-                            	 <div class="progress">
-                                      <div class="block">
-                                      	 <h1>Suport online</h1>
-                                         <h3 class="title_1"></h3>
-                                        <div class="httt">
-                                        <img src="img/index_32.png" width="49"><span class="httt1">Bộ phận kinh doanh</span>
-                                        </div>
-                                        <div class="httt">
-                                        <img src="img/index_32.png" alt="" width="49"><span class="httt1">Bộ phận hỗ trợ kỹ thuật</span>
-                                        </div>
-                                        
-                                      </div>
-                              </div>                                
-                            </div>
-                            <div class=" col-md-4 col-sm-4 col-xsm-6 col-xs-12">
-                            	 <div class="progress">
-                                      <div class="block block-lineket">
-                                      	 <h1>Mạng xã hội</h1>
-                                         
-                                        <div class=" httt">
-                                            <ul class="social-network fa-3x text-center">
-                                                <li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                                <li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="httt">
-                                            <select onchange="window.open(this.value,'_blank')" class="block-lineket" name="select">
-                                              <option value="" selected="selected">Liên kết website</option>
-                                              <option value="https://www.google.com.vn/">Bộ nông nghiệp</option>
-                                              <option value="https://www.google.com.vn/">Đại học nông nghiệp</option>
-                                            </select>
-                                        </div>
-                                        
-                                      </div>                               
-                            </div>                     
+<script>
+function orderajax(){
+	var order =  $('#orderby').val();
+	var phongcach =  $('#phongcach').val();
+	var xuatxu =  $('#xuatxu').val();
+	var tukhoa = "<?php echo $tukhoa;?>";
+    $.ajax({
+        url	    : "timkiem_ajax_tpl.php",
+        type		: "POST",
+        data		: {tukhoa: tukhoa, order: order ,phongcach: phongcach ,xuatxu: xuatxu},
+        success	: function(data) {
+	        $(".products").html(data);
+	        }
+         });
+};
+$(document).ready(function() {
+    $(".vungphongcach").on('click', '.check', function(e) {
+    	$(this).parents('.vungphongcach').find(".active").removeClass("active");
+    	$(this).find(".checked").addClass("active");
+    });
+    $(".vungxuatxu").on('click', '.check', function(e) {
+    	$(this).parents('.vungxuatxu').find(".active").removeClass("active");
+    	$(this).find(".checked").addClass("active");
+    });
+});
 
-			        	</div>
-    </div>
-            </div>
-  <!-- divider -->
-			  
-	  </section>	
-	
-	
-	<footer>
+function changephongcach(value){
+	$('#phongcach').val(value);
+	orderajax();
+};
+
+function changexuatxu(value){
+	$('#xuatxu').val(value);
+	orderajax();
+};
+</script>
+<div id="content" class="archive">
+<input type="hidden" id="phongcach" />
+<input type="hidden" id="xuatxu" />
 	<div class="container">
-		<div class="row">
-        	<div class="col-sm-2 col-lg-2">
-				<div class="row text-center ">
-                    <a class="logo" href="index.html"><img src="img/logo.png" alt="" / width="189"></a>
-                </div>
+    <a href="#" class="yf-mob-filter">Hiển thị bộ lọc</a>
+		<div class="left">
+			<div class="filter">
+				<h4>Phong cách:</h4>
+				<ul class="filter_ul vungphongcach">
+					<li class="phongcach" ><a onclick="changephongcach('all')" class="check"><p class="checked active"><span></span></p>Tất cả</a></li>
+											<li class="phongcach"><a class="check" onclick="changephongcach('co-dien')"><p class="checked"><span></span></p>Cổ điển</a></li>
+											<li class="phongcach"><a class="check" onclick="changephongcach('hien-dai')"><p class="checked"><span></span></p>Hiện đại</a></li>
+											<li class="phongcach"><a class="check" onclick="changephongcach('sang-tao')"><p class="checked"><span></span></p>Sáng tạo</a></li>
+											<li class="phongcach"><a class="check" onclick="changephongcach('sang-trong')"><p class="checked"><span></span></p>Sang trọng</a></li>
+											<li class="phongcach"><a class="check" onclick="changephongcach('tre-trung')"><p class="checked"><span></span></p>Trẻ trung</a></li>
+									</ul>
+			</div>
+			<div class="filter">
+				<h4>Xuất xứ:</h4>
+				<ul class="filter_ul vungphongcach">
+					<li><a class="check" onclick="changexuatxu('all')"><p class="checked active"><span></span></p>Tất cả</a></li>
+											<li><a class="check" onclick="changexuatxu('chau-au')"><p class="checked"><span></span></p>Châu Âu</a></li>
+											<li><a class="check" onclick="changexuatxu('dai-loan')"><p class="checked"><span></span></p>Đài Loan</a></li>
+											<li><a class="check" onclick="changexuatxu('duc')"><p class="checked"><span></span></p>Đức</a></li>
+											<li><a class="check" onclick="changexuatxu('han-quoc')"><p class="checked"><span></span></p>Hàn Quốc</a></li>
+											<li><a class="check" onclick="changexuatxu('italia')"><p class="checked"><span></span></p>Italia</a></li>
+											<li><a class="check" onclick="changexuatxu('malaysia')"><p class="checked"><span></span></p>Malaysia</a></li>
+											<li><a class="check" onclick="changexuatxu('nhat-ban')"><p class="checked"><span></span></p>Nhật Bản</a></li>
+											<li><a class="check" onclick="changexuatxu('trung-quoc')"><p class="checked"><span></span></p>Trung Quốc</a></li>
+											<li><a class="check" onclick="changexuatxu('viet-nam')"><p class="checked"><span></span></p>Việt Nam</a></li>
+									</ul>
+			</div>
+		</div>
+		<div class="right">
+			
+			<div class="title">
+				<h2>Sofa da Italia</h2>
+				<div class="title_right">
+					<span class="count">(Tìm thấy <?php echo count($result_spnam);?> sản phẩm)</span>
+					<span class="orderby">Sắp xếp theo: 
+						<select id="orderby" onchange="orderajax()">
+							<option value="" selected="selected">Mặc định</option>
+							<option value="desc">Giá từ cao đến thấp</option>
+							<option value="asc">Giá từ thấp đến cao</option>
+						</select>
+					</span>
+				</div>
+				<div class="clear"></div>
+							</div>
+			<div class="products">
+			<?php
+			for ($i=0;$i<count($result_spnam);$i++)
+			{ 
+			?>
+				<div class="item-content">
+						<div class="item" style="height: 285px;">	
+							<a href="chi-tiet-san-pham/<?=$result_spnam[$i]['tenkhongdau']?>-<?=$result_spnam[$i]['id']?>.html" class="thumbnail">
+								<img src="upload/sanpham/<?php if($result_spnam[$i]["tc_big"]==1) echo $result_spnam[$i]["photo"]; else echo $result_spnam[$i]["photo"] ?>" alt="<?=$result_spnam[$i]["ten_vi"]?>">
+									<img src="upload/sanpham/<?php if($result_spnam[$i]["tc_big"]==1) echo $result_spnam[$i]["photo"]; else echo $result_spnam[$i]["photo"] ?>" alt="<?=$result_spnam[$i]["ten_vi"]?>" class="phoicanh">
+																                							</a>
+							<div class="text">
+								<h3><a href="chi-tiet-san-pham/<?=$result_spnam[$i]['tenkhongdau']?>-<?=$result_spnam[$i]['id']?>.html"><?=$result_spnam[$i]["ten_vi"]?></a></h3>
+								<!--<h4>Mã SP: </h4>
+																	<table class="shop_attributes">
+										<tbody>
+											<tr>
+												<th>Kích thước</th>
+												<td><p>
+																					</p></td>
+											</tr>
+										</tbody>
+									</table>
+																-->
+									<p class="price regular_price">&nbsp;</p>
+												<p class="price">Giá: <span><span class="amount"><?php echo number_format ($result_spnam[$i]['gia'],0,",",".")." ₫";?></span></span></p>
+																	</div>
+							<div class="status">
+								<p>Tình trạng: <?=$result_spnam[$i]['tinh_trang']?></p>
+							</div>
+						</div>
+					</div>
+			<?php
+			} 
+			?>
+								<div class="clear"></div>
 				
 			</div>
-			<div class="col-sm-5 col-lg-5">
-				<div class="widget">
-					<h4>Công Ty TNHH Phân Bón Golhar - Golhar Co.,ltd</h4>
-					<address>
-					
-					 Địa chỉ:       Lô H6-H7-H8, Đường số 05, KCN Đức Hòa III- Hồng Đạt - Xã Đức Lập Hạ - Huyện Đức Hoà - Long An</address>
-					<p>
-						<i class="icon-phone"></i>Điện thoại: 0839873229  -   Fax : 0839873679 <br>
-						<i class="icon-envelope-alt"></i>Email: info@golhar.com -  Website: www/golhar.com
-					</p> 
-				</div>
-			</div>
-			
-			<div class="col-sm-5 col-lg-5">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.3607126147504!2d106.4471653141733!3d10.936101192213297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310b2bcd97e85c5b%3A0x7c97f2944d051501!2zS2h1IGPDtG5nIG5naGnhu4dwIMSQ4bupYyBIw7JhIDM!5e0!3m2!1svi!2s!4v1483522920870" width="100%" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
-			
 		</div>
-	</div>
-	<div id="sub-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="copyright">
-						<p>
-							<span>&copy; 2015 All right reserved. <a href="#/"></a> </span>
-                             <!-- 
-                                All links in the footer should remain intact. 
-                                Licenseing information is available at: http://bootstraptaste.com/license/
-                                You can buy this theme without footer links online at: http://bootstraptaste.com/buy/?theme=Sailor
-                            -->
-						
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<ul class="social-network">
-						<li>View: <span class="fa-2x">1025</span></li>
-						<li>Online:<span class="fa-2x">100</span></li>
-					</ul>
-				</div>
-			</div>
+		<div class="clear"></div>
 		</div>
-	</div>
-	</footer>
+</div>

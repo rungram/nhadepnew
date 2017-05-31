@@ -9,7 +9,6 @@
 	include_once _lib."functions.php";
 	include_once _lib."class.database.php";
             $d = new database($config['database']);
-            $id =  ($_POST['id']);
             $phongcach = '';
             if(!empty($_POST['phongcach'])&&$_POST['phongcach']!='all')
             {               $phongcach = "and phong_cach = '".$_POST['phongcach']."'"; 
@@ -19,9 +18,10 @@
             {
                 $xuatxu = "and xuat_xu = '".$_POST['xuatxu']."'";
             }
+            $tukhoa = $_POST['tukhoa'];
 			$d->reset();
 			$order = (!empty($_POST['order'])) ? 'order by gia '.$_POST['order'] : 'order by stt asc';
-			$sql_tungdanhmuc="select * from #_product where hienthi =1 and id_cat='$id' ".$phongcach." ".$xuatxu." ".$order;
+			$sql_tungdanhmuc="select * from #_product where hienthi =1 and (ten_vi LIKE '%$tukhoa%') ".$phongcach." ".$xuatxu." ".$order;
 			$d->query($sql_tungdanhmuc);	
 			$result_spnam=$d->result_array();	
 			
@@ -47,11 +47,11 @@ for ($i=0;$i<count($result_spnam);$i++)
 { 
 ?>
 	<div class="item-content">
-			<div class="item" style="height: 321px;">	
-				<a href="chi-tiet-san-pham/<?=$result_spnam[$i]['tenkhongdau']?>-<?=$result_spnam[$i]['id']?>.html" class="thumbnail">
-					<img src="upload/sanpham/<?php if($result_spnam[$i]["tc_big"]==1) echo $result_spnam[$i]["photo"]; else echo $result_spnam[$i]["photo"] ?>" alt="<?=$result_spnam[$i]["ten_vi"]?>">
-						<img src="upload/sanpham/<?php if($result_spnam[$i]["tc_big"]==1) echo $result_spnam[$i]["photo"]; else echo $result_spnam[$i]["photo"] ?>" alt="<?=$result_spnam[$i]["ten_vi"]?>" class="phoicanh">
-													                							</a>
+						<div class="item" style="height: 321px;">	
+							<a href="chi-tiet-san-pham/<?=$result_spnam[$i]['tenkhongdau']?>-<?=$result_spnam[$i]['id']?>.html" class="thumbnail">
+								<img src="upload/sanpham/<?php if($result_spnam[$i]["tc_big"]==1) echo $result_spnam[$i]["photo"]; else echo $result_spnam[$i]["photo"] ?>" alt="<?=$result_spnam[$i]["ten_vi"]?>">
+									<img src="upload/sanpham/<?php if($result_spnam[$i]["tc_big"]==1) echo $result_spnam[$i]["photo"]; else echo $result_spnam[$i]["photo"] ?>" alt="<?=$result_spnam[$i]["ten_vi"]?>" class="phoicanh">
+																                							</a>
 				<div class="text">
 					<h3><a href="chi-tiet-san-pham/<?=$result_spnam[$i]['tenkhongdau']?>-<?=$result_spnam[$i]['id']?>.html"><?=$result_spnam[$i]["ten_vi"]?></a></h3>
 					<!--<h4>Mã SP: </h4>

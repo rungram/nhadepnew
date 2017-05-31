@@ -202,7 +202,7 @@ img.wp-smiley, img.emoji {
 	}(document, 'script', 'facebook-jssdk'));
 </script>
 <div id="wrapper"> <a href="#" class="back-to-top"><img src="images/backtotop.png" alt="Back to top"></a>
-	<?php include _template."layout/header.php"; ?>
+	<?php include _template."layout/header_index.php"; ?>
 	<?php include _template.$template."_tpl.php"; ?>
 	<?php include _template."layout/footer.php"; ?>
 	<!--<a href="#yop-poll" class="fancybox khaosat"></a>

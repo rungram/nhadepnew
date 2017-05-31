@@ -9,7 +9,39 @@
 	$d->query($sql_tin_l);
 	$tin_l=$d->result_array();
 ?>
-
+<link rel="stylesheet" type="text/css" href="_layout/lib/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="_layout/lib/font-awesome/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="_layout/lib/select/select.min.css" />
+    <link rel="stylesheet" type="text/css" href="_layout/lib/bxslider/jquery.bxslider.css" />
+    <link rel="stylesheet" type="text/css" href="_layout/lib/carousel/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="_layout/lib/fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="_layout/lib/jquery-ui/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="_layout/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="_layout/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="_layout/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="_layout/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_layout/css/responsive.css" />
+<script language="javascript"> 
+	function doEnter(evt){
+	// IE					// Netscape/Firefox/Opera
+    	var key;
+    	if(evt.keyCode == 13 || evt.which == 13){
+    		onSearch(evt);
+    	}
+	}
+	function onSearch(evt) {	
+			var keyword = document.getElementById("keyword").value;
+			if(keyword=='')
+				alert('Bạn chưa nhập tên!');
+			else{
+			//var encoded = Base64.encode(keyword);
+			location.href = "index.php?com=tim-kiem&keyword="+keyword;
+// 			location.href = "google.com";
+			loadPage(document.location);			
+			alert();
+			}
+		}		
+</script>  
 <div id="header" class="header">
 
         <!--/.top-header -->
@@ -22,12 +54,12 @@
                     </a>
                 </div>
                 <div class="col-xs-7 col-sm-5 header-search-box">
-                    <form class="form-inline" method="get" action="#">
+                    <form class="form-inline">
                         <div class="form-group input-serach">
-                            <input type="text" class="txtsearch" name="q" autocomplete="off" placeholder="Tìm sản phẩm của bạn...">
+                            <input id="keyword" type="text" class="txtsearch" name="q" autocomplete="off" placeholder="Tìm sản phẩm của bạn...">
                             <div id="display"></div>
                         </div>
-                        <button class="pull-right btn-search">Tìm&nbsp;kiếm</button>
+                        <button class="pull-right btn-search" type="button" onclick="onSearch(event,'keyword');">Tìm&nbsp;kiếm</button>
                     </form>
                 </div>
 
