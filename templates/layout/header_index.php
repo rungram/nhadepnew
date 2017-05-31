@@ -34,6 +34,7 @@
 			if(keyword=='')
 				alert('Bạn chưa nhập tên!');
 			else{
+			//alert(keyword);
 			//var encoded = Base64.encode(keyword);
 			location.href = "nhadepnew/index.php?com=tim-kiem&keyword="+keyword;
 // 			location.href = "google.com";

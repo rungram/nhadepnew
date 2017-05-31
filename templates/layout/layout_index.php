@@ -47,7 +47,7 @@
     <meta content="#" name="reply-to">
 
     <script language="javascript">
-        var url_site = "http:/#/";
+        var url_site = "";
         var lang = "";
         var search_err = "Vui lòng nhập sản phẩm";
         var lang_cart = new Array();
