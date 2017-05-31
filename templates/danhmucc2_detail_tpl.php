@@ -162,6 +162,14 @@ function changexuatxu(value){
 								<div class="clear"></div>
 				
 			</div>
+			<div class="sortPagiBar">
+                    <div class="bottom-pagination">
+                        <div class="pagination">
+                        <?=$paging['paging']?></div>
+
+                    </div>
+                    
+                </div>
 		</div>
 		<div class="clear"></div>
 		</div>

@@ -16,7 +16,7 @@
 			$curPage = isset($_GET['p']) ? $_GET['p'] : 1;
 			$url=getCurrentPageURL();
 			$maxR=30;
-			$maxP=15;
+			$maxP=5;
 			$paging=paging_home($result_spnam , $url, $curPage, $maxR, $maxP);
 			$result_spnam=$paging['source'];
             
@@ -154,8 +154,16 @@ function changexuatxu(value){
 			} 
 			?>
 								<div class="clear"></div>
-				
+			
 			</div>
+			<div class="sortPagiBar">
+                    <div class="bottom-pagination">
+                        <div class="pagination">
+                        <?=$paging['paging']?></div>
+
+                    </div>
+                    
+                </div>
 		</div>
 		<div class="clear"></div>
 		</div>
