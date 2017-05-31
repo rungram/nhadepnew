@@ -36,7 +36,7 @@
 			else{
 			//alert(keyword);
 			//var encoded = Base64.encode(keyword);
-			location.href = "nhadepnew/index.php?com=tim-kiem&keyword="+keyword;
+			location.href = "index.php?com=tim-kiem&keyword="+keyword;
 // 			location.href = "google.com";
 			loadPage(document.location);			
 			//alert();
@@ -58,7 +58,6 @@
                     <form class="form-inline">
                         <div class="form-group input-serach">
                             <input id="keyword" type="text" class="txtsearch" name="q" autocomplete="off" placeholder="Tìm sản phẩm của bạn...">
-                            <div id="display"></div>
                         </div>
                         <button class="pull-right btn-search" type="button" onclick="onSearch(event,'keyword');">Tìm&nbsp;kiếm</button>
                     </form>
