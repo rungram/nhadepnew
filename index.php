@@ -122,6 +122,7 @@ img.wp-smiley, img.emoji {
 <link rel="stylesheet" id="jquery-selectBox-css" href="css/jquery.css" type="text/css" media="all">
 <link rel="stylesheet" id="yith-wcwl-main-css" href="css/style_002.css" type="text/css" media="all">
 <link rel="stylesheet" id="yith-wcwl-font-awesome-css" href="css/font-awesome_002.css" type="text/css" media="all">
+
 <script type="text/javascript" src="js/jquery-1.js"></script>
 <script type="text/javascript" src="js/jquery-ui.js"></script>
 <script type="text/javascript" src="js/jquery_009.js"></script>

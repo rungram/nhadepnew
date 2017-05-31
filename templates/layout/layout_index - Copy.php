@@ -381,58 +381,56 @@
             <div class="container">
                 <!-- introduce-box -->
                 <div id="introduce-box" class="row">
-                    <div class="col-md-3">
-                        
+                    <div class="col-md-6">
+                        <div class="introduce-title">Home Decor</div>
                         <div id="address-box">
                             <div id="address-list">
 
-                                <h4 style="color:#fff;font-size: 16px;padding-bottom: 7px;">GIỚI THIỆU VỀ HOME DECOR</h4>
-                                <p style="color:#fff"> HOME DECOR là thương hiệu Thiết kế kiến trúc, Thiết kế nội thất, Trang trí nội thất, Thi công xây dựng, Cung cấp thiết bị nội thất.
-                                    Với sự	nỗ lực trong suốt thời gian qua, chúng tôi mong muốn mang lại cho khách hàng những sản phẩm thiết kế tốt nhất và biến những sản phẩm
-                                    thiết kế đó trở thành hiện thực. 
-                                    Home Decor tin rằng với khát vọng đầy tính nhân văn của mình, sẽ tạo được nhiều giá trị thích dụng và bền vững cho toàn xã hội. </p>
+                                <div class="tit-name tit-dia-chi"><i class="fa fa-map-marker"></i>Địa chỉ:</div>
+                                <div class="tit-contain">10/3 Trần Nhật Duật, Tân Định, Quận 1, TP.Hồ Chí Minh</div>
+
+                                <div class="tit-name tit-dien-thoai"><i class="fa fa-phone"></i>Điện thoại:</div>
+                                <div class="tit-contain">091 487 27 07</div>
+
+                                <div class="tit-name tit-hotline"><i class="fa fa-phone"></i>Hotline:</div>
+                                <div class="tit-contain">0917 049 077</div>
+
+                                <div class="tit-name tit-email"><i class="fa fa-envelope-o"></i>Email:</div>
+                                <div class="tit-contain">info@maison-decor.vn</div>
+
+                                <div class="tit-name tit-website"><i class="fa fa-globe fa-1x"></i>Website:</div>
+                                <div class="tit-contain">http://maison-decor.vn</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-3">
                         <div class="row">
                             <div class="col-sm-12">
-                                <p style="color:#fff;font-size: 16px;padding-bottom: 7px;"><strong>CÔNG TY CP KIẾN TRÚC XÂY DỰNG HOME DECOR</strong></p>
-		<p style="color:#fff"> Mã số thuế: 0314 373 972 do sở Kế Hoạch Đầu Tư Tp.HCM cấp </p>
-		<p style="color:#fff"> Trụ sở: Tầng lửng tại tầng 01, tòa nhà An Phú Plaza, số 117-119 đường Lý Chính Thắng, P.7, Q.3, Tp.HCM </p>
-		<p style="color:#fff"> Văn phòng giao dịch 01: Tầng 1, tòa nhà Packsimex Plaza, số 52 đường Đông Du, P.Bến Nghé, Q.1, Tp.HCM </p>
-		<p style="color:#fff"><i class="fa fa-phone"></i> Hotline: <a style="color:#fff" href="tel:0917 049 077">0917 049 077</a></p>
-		<p style="color:#fff"><i class="fa fa-envelope"></i> Email: <a style="color:#fff" href="">homedecor.info.vn@gmail.com</a></p>
-		<p style="color:#fff"> Website: <a style="color:#fff" href="">homedecor.info.vn</a></p>
-		<p></p>
+                                <div class="introduce-title">Home Decor</div>
+                                <ul id="introduce-company" class="introduce-list">
+                                    <li><a href="http://maison-decor.vn/">Trang chủ</a></li>
+                                    <li><a href="http://maison-decor.vn/gioi-thieu-html">Giới thiệu</a></li>
+                                    <li><a href="http://maison-decor.vn/lien-he.html">Liên hệ</a></li>
+                                </ul>
+                                <div class="clear10"></div>
+                                <div class="social-link social-product">
+                                    <a title="Facebook" target="_blank" href="https://www.facebook.com/maisondecor.vn"><i class="fa fa-facebook"></i></a>
+                                    <a title="Youtube" target="_blank" href="https://www.youtube.com/user/maisondecor.vn"><i class="fa fa-youtube"></i></a>
+                                    <a title="Instagram" target="_blank" href="https://www.instagram.com/maisondecor.vn"><i class="fa fa-instagram"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
+                    <div class="introduce-title">Facebook</div>
                     	<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fhomedecor.info.vn%3Ffref%3Dts&amp;width=360&amp;height=190&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false"
-			scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 360px;
-			height: 160px;" allowtransparency="true"></iframe>
-		<!-- Histats.com	(div with counter) -->
-		<div id="histats_counter"></div>
-		<!-- Histats.com	START	(aync)-->
-		<script type="text/javascript">var _Hasync= _Hasync|| [];
-		_Hasync.push(['Histats.start', '1,3792557,4,403,118,80,00011111']);
-		_Hasync.push(['Histats.fasi', '1']);
-		_Hasync.push(['Histats.track_hits', '']);
-		(function() {
-		var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-		hs.src = ('//s10.histats.com/js15_as.js');
-		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-		})();</script>
-		<noscript>
-		<a href="/" target="_blank"><img	src="//sstatic1.histats.com/0.gif?3792557&101" alt="" border="0"></a>
-		</noscript>
-		<!-- Histats.com	END	-->
+						scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 100%;
+						height: 190px;" allowtransparency="true"></iframe>
                     </div>
                 </div><!-- /#introduce-box -->
                 <div id="footer-menu-box">
                     <p class="text-center">
-                        Copyrights &copy; 2017 Home Decor. All Rights Reserved.<br />
+                        Copyrights &copy; 2016 Home Decor. All Rights Reserved.<br />
                     </p>
 
                 </div><!-- /#footer-menu-box -->

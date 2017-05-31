@@ -35,10 +35,10 @@
 				alert('Bạn chưa nhập tên!');
 			else{
 			//var encoded = Base64.encode(keyword);
-			location.href = "index.php?com=tim-kiem&keyword="+keyword;
+			location.href = "nhadepnew/index.php?com=tim-kiem&keyword="+keyword;
 // 			location.href = "google.com";
 			loadPage(document.location);			
-			alert();
+			//alert();
 			}
 		}		
 </script>  
@@ -65,14 +65,14 @@
 
                 <div class="col-xs-12 col-sm-2 block-language">
                     <div class="language-content">
-                        <a href="http://#/?Language=en"><img alt="English" src="http://maison-decor.vn/frame/default/images/en.png" />English</a>
-                        <a href="http://maison-decor.vn/?Language=vn"><img alt="Vietnam" src="http://maison-decor.vn/frame/default/images/vn.png" />Tiếng Việt</a>
+                        <a href="#"><img alt="English" src="http://maison-decor.vn/frame/default/images/en.png" />English</a>
+                        <a href="#"><img alt="Vietnam" src="http://maison-decor.vn/frame/default/images/vn.png" />Tiếng Việt</a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-2 hotline">
                     <div class="content-hotline">
                         <span class="label-hotline">Hotline</span>
-                        <span class="re-hotline">0906767509</span>
+                        <span class="re-hotline">0917 049 077</span>
                     </div>
                 </div>
 
