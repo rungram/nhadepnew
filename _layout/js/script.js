@@ -50,17 +50,17 @@
 		// -------------------------------------------------------------------------------------------------------
 		// AUTO SEARCH
 		// -------------------------------------------------------------------------------------------------------
-		$(".btn-search").click(function(){
-			var q = $('.txtsearch').val();
-			var idCate = $('.select-category').val();
-			if(q=="") {
-				alert("Vui lòng nhập từ khóa tìm kiếm");
-				$('.txtsearch').focus();
-				return false;
-			} else {
-				ReURL(url_site+"tim-kiem.html?q="+q+"&idCate="+idCate);
-			}
-		});
+//		$(".btn-search").click(function(){
+//			var q = $('.txtsearch').val();
+//			var idCate = $('.select-category').val();
+//			if(q=="") {
+//				alert("Vui lòng nhập từ khóa tìm kiếm");
+//				$('.txtsearch').focus();
+//				return false;
+//			} else {
+//				ReURL(url_site+"tim-kiem.html?q="+q+"&idCate="+idCate);
+//			}
+//		});
 		
 		$(".txtsearch").keyup(function() 
 		{
