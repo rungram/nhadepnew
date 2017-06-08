@@ -26,7 +26,7 @@
 					</a>
 				</div>
 				<?php include _template."layout/menu_top.php"; ?>
-               </div>	
+				</div>
 			</div>
 			</div>
 			<div class="clear"></div>

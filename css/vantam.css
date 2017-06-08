@@ -10,3 +10,7 @@
     background: #65cc03 !important;
     margin-bottom: 6px;
 }
+
+.header, #home-slider {
+    background: #494949 !important;
+}
