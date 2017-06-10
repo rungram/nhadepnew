@@ -144,7 +144,7 @@ include_once "phpmailer/class.smtp.php";
 //Khởi tạo đối tượng
 $subject = "Thông tin đơn hàng.";
 //$from = "shopnana.info@gmail.com";
-$from = "nguyenleduykhang29111994@gmail.com";
+$from = "homedecor.info.vn@gmail.com";
 $from_name = $tennguoidat;
 
 $to = $email;
@@ -161,16 +161,17 @@ $mail->SMTPSecure = 'ssl'; // sử dụng giao thức SSL vì gmail bắt buộc
 
 $mail->Host = 'smtp.gmail.com';
 $mail->Port = 465; 
-$mail->Username = "nguyenleduykhang29111994@gmail.com";  
-$mail->Password = "Kcdagtemyatpxh9";           
-$mail->SetFrom($from, $from_name);
+$mail->Username = "homedecor.info.vn@gmail.com";  
+$mail->Password = "Duy1033202";           
+$mail->SetFrom($from, 'Công Ty CP Kiến Trúc Xây Dựng Home Decor');
 $mail->From = $from;		
 
 $mail->Subject = $subject;
 $mail->Body = $body;
 $mail->AddAddress($to);
 
-$mail->AddReplyTo($email,"Thông tin phản hồi.");// Ấn định email sẽ nhận khi người dùng reply lại.
+// $mail->AddReplyTo($email,"Thông tin phản hồi.");// Ấn định email sẽ nhận khi người dùng reply lại.
+$mail->AddCC('homedecor.info.vn@gmail.com',"Thông tin đơn hàng khách đặt.");// Ấn định email sẽ nhận khi người dùng reply lại.
 $mail->WordWrap = 50; // set word wrap   
 $mail->IsHTML(true); // send as HTML
 //Thiết lập định dạng font chữ

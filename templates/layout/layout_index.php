@@ -381,20 +381,20 @@
             <div class="container">
                 <!-- introduce-box -->
                 <div id="introduce-box" class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         
                         <div id="address-box">
                             <div id="address-list">
 
-                                <h4 style="color:#fff;font-size: 16px;padding-bottom: 7px;">GIỚI THIỆU VỀ HOME DECOR</h4>
-                                <p style="color:#fff"> HOME DECOR là thương hiệu Thiết kế kiến trúc, Thiết kế nội thất, Trang trí nội thất, Thi công xây dựng, Cung cấp thiết bị nội thất.
+                                <h4 style="color:#fff;font-size: 16px;padding-top: 0px;"><strong>GIỚI THIỆU VỀ HOME DECOR</strong></h4>
+                                <p style="color:#fff;padding-top: 12px;"> HOME DECOR là thương hiệu Thiết kế kiến trúc, Thiết kế nội thất, Trang trí nội thất, Thi công xây dựng, Cung cấp thiết bị nội thất.
                                     Với sự	nỗ lực trong suốt thời gian qua, chúng tôi mong muốn mang lại cho khách hàng những sản phẩm thiết kế tốt nhất và biến những sản phẩm
                                     thiết kế đó trở thành hiện thực. 
                                     Home Decor tin rằng với khát vọng đầy tính nhân văn của mình, sẽ tạo được nhiều giá trị thích dụng và bền vững cho toàn xã hội. </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-4">
                         <div class="row">
                             <div class="col-sm-12">
                                 <p style="color:#fff;font-size: 16px;padding-bottom: 7px;"><strong>CÔNG TY CP KIẾN TRÚC XÂY DỰNG HOME DECOR</strong></p>
