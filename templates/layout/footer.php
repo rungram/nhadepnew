@@ -21,7 +21,7 @@
 			Home Decor tin rằng với khát vọng đầy tính nhân văn của mình, sẽ tạo được nhiều giá trị thích dụng và bền vững cho toàn xã hội. </p>
 		</div>
 		<div class="col-3">
-		<p style="color:#fff;font-size: 16px;padding-bottom: 7px;"><strong>CÔNG TY CP KIẾN TRÚC XÂY DỰNG HOME DECOR</strong></p>
+		<p style="color:#fff;font-size: 16px;padding-bottom: 7px;"><strong>CTY CP KIẾN TRÚC XÂY DỰNG HOME DECOR</strong></p>
 		<p style="color:#fff"> Mã số thuế: 0314 373 972 do sở Kế Hoạch Đầu Tư Tp.HCM cấp </p>
 		<p style="color:#fff"> Trụ sở: Tầng lửng tại tầng 01, tòa nhà An Phú Plaza, số 117-119 đường Lý Chính Thắng, P.7, Q.3, Tp.HCM </p>
 		<p style="color:#fff"> Văn phòng giao dịch 01: Tầng 1, tòa nhà Packsimex Plaza, số 52 đường Đông Du, P.Bến Nghé, Q.1, Tp.HCM </p>
