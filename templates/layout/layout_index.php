@@ -3,7 +3,7 @@
 <head>
 <base href="http://<?=$config_url?>/"	/>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="http://maison-decor.vn/favicon.png" type="image/x-icon">
+    <!--<link rel="shortcut icon" href="http://maison-decor.vn/favicon.png" type="image/x-icon">-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="_layout/lib/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="_layout/lib/font-awesome/font-awesome.min.css" />
@@ -30,12 +30,12 @@
 
     <!-- for Facebook -->
 
-    <meta property="og:title" content="Maison Decor - Making your home better!" />
+    <meta property="og:title" content="Home Decor - Making your home better!" />
     <meta property="og:type" content="Website" />
-    <meta property="og:image" content="http://maison-decor.vn/upload/advertising/giam-20.jpg" />
-    <meta property="og:url" content="http://maison-decor.vn/" />
+    <!--<meta property="og:image" content="http://maison-decor.vn/upload/advertising/giam-20.jpg" />
+    <meta property="og:url" content="http://maison-decor.vn/" />-->
     <meta property="og:description" content="Home Decor - Making your home better!" />
-    <meta name="DC.title" content="Maison Decor" />
+    <meta name="DC.title" content="Home Decor" />
     <meta name="geo.region" content="VN-SG" />
     <meta name="geo.placename" content="Ho Chi Minh City" />
     <meta name="geo.position" content="10.792154;106.689955" />
