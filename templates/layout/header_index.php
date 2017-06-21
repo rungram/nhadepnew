@@ -37,6 +37,7 @@
 		//alert(keyword);
 		//var encoded = Base64.encode(keyword);
 		location.href = "index.php?com=tim-kiem&keyword="+keyword;
+		//alert(location.href);
 //		location.href = "google.com";
 		loadPage(document.location);		
 		//alert();
