@@ -284,6 +284,73 @@ src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/944239827/?value
 <div style="display:none"><a href="http://nhadep.com.vn/wp-content/cache/sitemap.xml" target="_blank">sitemap</a></div>
 <div style="display:none"><a href="http://nhadep.com.vn/wp-content/cache/index.html" target="_blank">Replica Rolex Montres</a></div>
 <script type="text/javascript" src="_layout/js/script.js"></script>
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+		_Hasync.push(['Histats.start', '1,3792557,4,403,118,80,00011111']);
+		_Hasync.push(['Histats.fasi', '1']);
+		_Hasync.push(['Histats.track_hits', '']);
+		(function() {
+		var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+		hs.src = ('//s10.histats.com/js15_as.js');
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+		})();</script>
+		<noscript>
+		<a href="/" target="_blank"><img	src="//sstatic1.histats.com/0.gif?3792557&101" alt="" border="0"></a>
+		</noscript>
+		<!-- Histats.com	END	-->
+                    </div>
+                </div><!-- /#introduce-box -->
+                <div id="footer-menu-box">
+                    <p class="text-center">
+                        Copyrights &copy; 2017 Home Decor. All Rights Reserved.<br />
+                    </p>
+
+                </div><!-- /#footer-menu-box -->
+            </div>
+        </footer>
+        <!--div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/vi_VN/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script-->
+    </div>
+    <a href="#" class="scroll_top" title="Lên trên" style="display: inline;">Lên trên</a>
+
+    <!-- Script-->
+    <script type="text/javascript" src="_layout/lib/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="_layout/lib/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_layout/lib/select/select.min.js"></script>
+    <script type="text/javascript" src="_layout/lib/bxslider/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="_layout/lib/carousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="_layout/lib/countdown/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="_layout/js/jquery.actual.min.js"></script>
+    <script type="text/javascript" src="_layout/lib/fancybox/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="_layout/lib/jquery.elevatezoom.js"></script>
+    <script type="text/javascript" src="_layout/js/script.js"></script>
+    <script type="text/javascript" src="_layout/js/cart.js"></script>
+    <script type="text/javascript" src="_layout/js/jquery.validate.js"></script>
+    <script type="text/javascript" src="_layout/js/messages_vi.js"></script>
+    <!-- Tim kiem -->
+    <script type="text/javascript" src="_layout/js/jstorage.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var value = $.jStorage.get('popup-new');
+            if (value) {
+                $("#popup-new").hide();
+            } else {
+                $("#popup-new").show();
+            }
+        });
+        function popupnews() {
+            $.jStorage.set('popup-new', '1');
+            $("#popup-new").hide();
+        }
+        function popuphide() {
+            $("#popup-new").hide();
+        }
+    </script>
 </body>
 </html>
 <?php }?>
