@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <!--<link rel="shortcut icon" href="http://maison-decor.vn/favicon.png" type="image/x-icon">-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" type="text/css" href="_layout/lib/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="_layout/lib/font-awesome/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="_layout/lib/select/select.min.css" />
@@ -450,7 +454,7 @@
     <a href="#" class="scroll_top" title="Lên trên" style="display: inline;">Lên trên</a>
 
     <!-- Script-->
-    <script type="text/javascript" src="_layout/lib/jquery/jquery-1.11.2.min.js"></script>
+<!--     <script type="text/javascript" src="_layout/lib/jquery/jquery-1.11.2.min.js"></script> -->
     <script type="text/javascript" src="_layout/lib/bootstrap/bootstrap.min.js"></script>
     <script type="text/javascript" src="_layout/lib/select/select.min.js"></script>
     <script type="text/javascript" src="_layout/lib/bxslider/jquery.bxslider.min.js"></script>

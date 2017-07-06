@@ -57,6 +57,10 @@ else
 <!-- Favicon 
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" /> -->
 <!-- Custom css -->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <link rel="stylesheet" type="text/css" href="js/rs-wp-v1.css" media="all">
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="screen">
 <link rel="stylesheet" type="text/css" href="css/font.css" media="all">
@@ -319,7 +323,7 @@ src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/944239827/?value
     <a href="#" class="scroll_top" title="Lên trên" style="display: inline;">Lên trên</a>
 
     <!-- Script-->
-    <script type="text/javascript" src="_layout/lib/jquery/jquery-1.11.2.min.js"></script>
+<!--     <script type="text/javascript" src="_layout/lib/jquery/jquery-1.11.2.min.js"></script> -->
     <script type="text/javascript" src="_layout/lib/bootstrap/bootstrap.min.js"></script>
     <script type="text/javascript" src="_layout/lib/select/select.min.js"></script>
     <script type="text/javascript" src="_layout/lib/bxslider/jquery.bxslider.min.js"></script>

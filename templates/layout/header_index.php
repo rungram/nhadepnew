@@ -8,6 +8,17 @@
 	$sql_tin_l ="select * from #_tinloai1_1_list order by stt asc limit 0,3";
 	$d->query($sql_tin_l);
 	$tin_l=$d->result_array();
+	
+	$sanpham_arr_all = array();
+	$d->reset();
+	$sql_list ="select ten_vi from #_product order by stt asc limit 0,5";
+	$d->query($sql_list);
+	$sanpham_arr_all =$d->result_array();
+	$sanpham_all = array();
+	foreach ($sanpham_arr_all as $item)
+	{
+	    $sanpham_all[] = $item['ten_vi'];
+	}
 ?>
 <link rel="stylesheet" type="text/css" href="_layout/lib/bootstrap/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="_layout/lib/font-awesome/font-awesome.min.css" />
@@ -21,6 +32,14 @@
 <link rel="stylesheet" type="text/css" href="_layout/css/style.css" />
 <link rel="stylesheet" type="text/css" href="_layout/css/custom.css" />
 <link rel="stylesheet" type="text/css" href="_layout/css/responsive.css" />
+<script>
+  $( function() {
+	  var availableTags = <?php echo json_encode($sanpham_all); ?>;
+    $( "#keyword" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  </script>
 <script language="javascript"> 
 	function doEnter(evt){
 	// IE		 // Netscape/Firefox/Opera
