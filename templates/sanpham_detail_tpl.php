@@ -88,12 +88,11 @@ if(isset($_GET['id']))
 	<div class="container">
 		<div class="main_content">
 			<div class="left">
-				<div class="thumbnail">
-					<a href="#" data-fill="image_1" class="thumbnail-fancy"><img src="upload/sanpham/<?php if($chitiet_sp["tc_big"]==1) echo $chitiet_sp["photo"]; else echo $chitiet_sp["photo"] ?>"></a>
-					<a id="image_1" href="#" class="fancybox" rel="single_fancy"></a>
-											<a id="image_2" href="http://nhadep.com.vn/wp-content/uploads/05-a-Sofa-da-Italia-New-Ming.jpg" class="fancybox" rel="single_fancy"></a>
+				<div class="thumbnail" style="border: none;">
+					<a href="#" data-fill="image_1" class="thumbnail-fancy" style="margin-right: 0px; padding-right: 0px;"><img src="upload/sanpham/<?php if($chitiet_sp["tc_big"]==1) echo $chitiet_sp["photo"]; else echo $chitiet_sp["photo"] ?>"></a>
+											<a style="background:none" target="_blank" id="image_2" href="upload/sanpham/<?php if($chitiet_sp["tc_big"]==1) echo $chitiet_sp["photo"]; else echo $chitiet_sp["photo"] ?>" class="fancybox" rel="single_fancy">
 										
-					          					<p>Click chuột để phóng to ảnh</p>
+					          					<p>Click chuột để phóng to ảnh</p></a>
 				</div>
 				<h3>Album ảnh</h3>
 				<div class="slider_thumbnail">
@@ -108,7 +107,7 @@ if(isset($_GET['id']))
 				<h1><?=$chitiet_sp["ten_vi"]?></h1>
 				<h4><?=$chitiet_sp["mota_vi"]?></h4>
 												<p class="price regular_price">&nbsp;</p>
-								<p class="price">Giá: <span><span class="amount"><?php echo number_format ($chitiet_sp['gia'],0,",",".")." ₫";?></span></span></p>
+								<p class="price">Giá: <span><span class="amount" style="font-size: 20px;"><?php echo number_format ($chitiet_sp['gia'],0,",",".")." ₫";?></span></span></p>
 								<?=$chitiet_sp["noidung_vi"]?>		
 				<div class="color">
 									</div>

@@ -11,7 +11,7 @@
 	
 	$sanpham_arr_all = array();
 	$d->reset();
-	$sql_list ="select ten_vi from #_product order by stt asc limit 0,5";
+	$sql_list ="select ten_vi from #_product order by stt asc";
 	$d->query($sql_list);
 	$sanpham_arr_all =$d->result_array();
 	$sanpham_all = array();

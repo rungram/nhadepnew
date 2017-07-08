@@ -2440,6 +2440,7 @@ span.notify-right{
 /*------------------
 [9. Owl carousel]
 */
+
 .owl-controls{
     
 }
@@ -2477,7 +2478,6 @@ span.notify-right{
 .owl-controls .owl-next .fa{
     font-weight: bold;
 }
-
 /*-----------------
 [10. Banner advertisement]
 */
@@ -3464,6 +3464,7 @@ span.notify-right{
   width: 50%;
   float: left;
 }
+/**
 .owl-controls .owl-dots{
   position: absolute;
   left: 0;
@@ -3482,7 +3483,7 @@ span.notify-right{
 .owl-controls .owl-dots .owl-dot.active{
   background: #e5101d;
 }
-
+**/
 /** special-product**/
 .products-block{
   overflow: hidden;
@@ -3646,7 +3647,7 @@ span.notify-right{
 /*--------------------
 [16.2 Center column]
 */
-
+/*
 .category-slider .owl-controls .owl-prev, 
 .category-slider .owl-controls .owl-next {
   background: #aaa;
@@ -3685,7 +3686,7 @@ span.notify-right{
     visibility: inherit;
     opacity: 1;
 }
-
+*/
 /** subcategories **/
 .subcategories {
   border: 0 dashed #e4e4e4;
@@ -8444,11 +8445,13 @@ span.notify-right{
   height: 10px;
   margin: 0 3px;
 }
+/*
 .owl-controls .owl-dots .owl-dot.active{
   background-color: #e5101d;
   border-color: #e5101d;
   opacity: 1;
 }
+*/
 /* OPTION 14 */
 .block-slide14 .owl-controls .owl-dots{
   bottom: 20px;

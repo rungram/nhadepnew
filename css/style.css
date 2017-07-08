@@ -480,12 +480,14 @@ ul {
 	margin-right:3px;
 	padding-right:12px
 }
+/*
 .brackcum span {
 	color:#666;
 	font-family:"Roboto",sans-serif;
 	font-size:13px;
 	font-weight:400
 }
+*/
 .brackcum .container {
 	border-bottom:1px dashed #ccc;
 	padding:14px 0
@@ -1878,7 +1880,7 @@ ul {
 	height:63px
 }
 .slider_thumbnail .owl-carousel .owl-controls .owl-nav div {
-	display:block!important;
+	display:block;
 	position:absolute;
 	top:25px;
 	width:9px;
